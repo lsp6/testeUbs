@@ -15,7 +15,7 @@ Mockito
 - Banco:
     - Existem duas formas para se acessar banco.
         - A primeira e mais fácil é ir no application.properties `do aplicativo` e comentar o bloco `SQL SERVER` e descomentar o bloco `banco em memória`.
-        - A segunda, consiste na necessidade de executar os scripts na pasta [sql](src/sql) em um banco sql server. 
+        - A segunda, consiste na necessidade de executar os scripts na pasta [sql](src/sql) em um banco sql server e ajustar o `application.properties` para apontar para esse banco.
         Para isso é necessário descomentar o bloco `SQL SERVER` e comentar o bloco `banco em memória`.
         
 - Execução via maven:
@@ -31,4 +31,3 @@ Após a importação dos dados, para a execução do cálculo, execute a requisi
 `GET localhost:8080/api/product/calculateSell?product=EMMS&establishmentQuantity=2
  Accept: */*
  Cache-Control: no-cache`
- 
