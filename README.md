@@ -15,7 +15,8 @@ Mockito
 - Banco:
     - Existem duas formas para se acessar banco.
         - A primeira e mais fácil é ir no application.properties `do aplicativo` e comentar o bloco `SQL SERVER` e descomentar o bloco `banco em memória`.
-        - A segunda, consiste na necessidade de executar os scripts na pasta [sql](src/sql) em um banco sql server sem precisar mexer no application.properties 
+        - A segunda, consiste na necessidade de executar os scripts na pasta [sql](src/sql) em um banco sql server. 
+        Para isso é necessário descomentar o bloco `SQL SERVER` e comentar o bloco `banco em memória`.
         
 - Execução via maven:
     - No diretório do projeto execute o comando: mvn spring-boot:run
